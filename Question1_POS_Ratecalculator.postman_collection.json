@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "e3b94c4b-d2dd-49ed-a344-c3c41ca76901",
+		"name": "POS_Ratecalculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38227493"
+	},
+	"item": [
+		{
+			"name": "countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/countries",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www-api.pos.com.my/api/countries",
+							"protocol": "https",
+							"host": [
+								"www-api",
+								"pos",
+								"com",
+								"my"
+							],
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;media-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 16 Jan 2025 17:34:10 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jan 2025 17:34:10 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2561"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "cdn-cache; desc=MISS"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "edge; dur=11"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "origin; dur=54"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "ak_p; desc=\"1737048850565_2038156455_83721523_6486_10600_7_0_-\";dur=1"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=93600"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Akamai-GRN",
+							"value": "0.a7cc7b79.1737048850.4fd7d33"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"CountryCode\": \"AF\",\n        \"CountryName\": \"Afghanistan\"\n    },\n    {\n        \"CountryCode\": \"AL\",\n        \"CountryName\": \"Albania\"\n    },\n    {\n        \"CountryCode\": \"DZ\",\n        \"CountryName\": \"Algeria\"\n    },\n    {\n        \"CountryCode\": \"AD\",\n        \"CountryName\": \"Andorra\"\n    },\n    {\n        \"CountryCode\": \"AO\",\n        \"CountryName\": \"Angola\"\n    },\n    {\n        \"CountryCode\": \"AG\",\n        \"CountryName\": \"Antigua and Barbuda\"\n    },\n    {\n        \"CountryCode\": \"AR\",\n        \"CountryName\": \"Argentina\"\n    },\n    {\n        \"CountryCode\": \"AM\",\n        \"CountryName\": \"Armenia\"\n    },\n    {\n        \"CountryCode\": \"AW\",\n        \"CountryName\": \"Aruba\"\n    },\n    {\n        \"CountryCode\": \"AU\",\n        \"CountryName\": \"Australia\"\n    },\n    {\n        \"CountryCode\": \"CX\",\n        \"CountryName\": \"Australia - Christmas Island\"\n    },\n    {\n        \"CountryCode\": \"CC\",\n        \"CountryName\": \"Australia - Cocos Islands\"\n    },\n    {\n        \"CountryCode\": \"NF\",\n        \"CountryName\": \"Australia - Norfolk Island\"\n    },\n    {\n        \"CountryCode\": \"AT\",\n        \"CountryName\": \"Austria\"\n    },\n    {\n        \"CountryCode\": \"AZ\",\n        \"CountryName\": \"Azerbaijan\"\n    },\n    {\n        \"CountryCode\": \"BS\",\n        \"CountryName\": \"Bahamas\"\n    },\n    {\n        \"CountryCode\": \"BH\",\n        \"CountryName\": \"Bahrain\"\n    },\n    {\n        \"CountryCode\": \"BD\",\n        \"CountryName\": \"Bangladesh\"\n    },\n    {\n        \"CountryCode\": \"BB\",\n        \"CountryName\": \"Barbados\"\n    },\n    {\n        \"CountryCode\": \"BY\",\n        \"CountryName\": \"Belarus\"\n    },\n    {\n        \"CountryCode\": \"BE\",\n        \"CountryName\": \"Belgium\"\n    },\n    {\n        \"CountryCode\": \"BZ\",\n        \"CountryName\": \"Belize\"\n    },\n    {\n        \"CountryCode\": \"BJ\",\n        \"CountryName\": \"Benin\"\n    },\n    {\n        \"CountryCode\": \"BT\",\n        \"CountryName\": \"Bhutan\"\n    },\n    {\n        \"CountryCode\": \"BO\",\n        \"CountryName\": \"Bolivia\"\n    },\n    {\n        \"CountryCode\": \"BA\",\n        \"CountryName\": \"Bosnia and Herzegovina\"\n    },\n    {\n        \"CountryCode\": \"BW\",\n        \"CountryName\": \"Botswana\"\n    },\n    {\n        \"CountryCode\": \"BR\",\n        \"CountryName\": \"Brazil\"\n    },\n    {\n        \"CountryCode\": \"BN\",\n        \"CountryName\": \"Brunei\"\n    },\n    {\n        \"CountryCode\": \"BG\",\n        \"CountryName\": \"Bulgaria\"\n    },\n    {\n        \"CountryCode\": \"BF\",\n        \"CountryName\": \"Burkina Faso\"\n    },\n    {\n        \"CountryCode\": \"BI\",\n        \"CountryName\": \"Burundi\"\n    },\n    {\n        \"CountryCode\": \"KH\",\n        \"CountryName\": \"Cambodia\"\n    },\n    {\n        \"CountryCode\": \"CM\",\n        \"CountryName\": \"Cameroon\"\n    },\n    {\n        \"CountryCode\": \"CA\",\n        \"CountryName\": \"Canada\"\n    },\n    {\n        \"CountryCode\": \"CV\",\n        \"CountryName\": \"Cape Verde\"\n    },\n    {\n        \"CountryCode\": \"CF\",\n        \"CountryName\": \"Central African Republic\"\n    },\n    {\n        \"CountryCode\": \"TD\",\n        \"CountryName\": \"Chad\"\n    },\n    {\n        \"CountryCode\": \"CL\",\n        \"CountryName\": \"Chile\"\n    },\n    {\n        \"CountryCode\": \"CN\",\n        \"CountryName\": \"China\"\n    },\n    {\n        \"CountryCode\": \"CO\",\n        \"CountryName\": \"Colombia\"\n    },\n    {\n        \"CountryCode\": \"KM\",\n        \"CountryName\": \"Comoros\"\n    },\n    {\n        \"CountryCode\": \"CG\",\n        \"CountryName\": \"Congo Republic\"\n    },\n    {\n        \"CountryCode\": \"CR\",\n        \"CountryName\": \"Costa Rica\"\n    },\n    {\n        \"CountryCode\": \"CI\",\n        \"CountryName\": \"Cote d Ivoire\"\n    },\n    {\n        \"CountryCode\": \"HR\",\n        \"CountryName\": \"Croatia\"\n    },\n    {\n        \"CountryCode\": \"CU\",\n        \"CountryName\": \"Cuba\"\n    },\n    {\n        \"CountryCode\": \"CW\",\n        \"CountryName\": \"Curacao\"\n    },\n    {\n        \"CountryCode\": \"CY\",\n        \"CountryName\": \"Cyprus\"\n    },\n    {\n        \"CountryCode\": \"CZ\",\n        \"CountryName\": \"Czech Republic\"\n    },\n    {\n        \"CountryCode\": \"CD\",\n        \"CountryName\": \"Democratic Republic of Congo\"\n    },\n    {\n        \"CountryCode\": \"DK\",\n        \"CountryName\": \"Denmark\"\n    },\n    {\n        \"CountryCode\": \"FO\",\n        \"CountryName\": \"Denmark - Faroe Islands\"\n    },\n    {\n        \"CountryCode\": \"GL\",\n        \"CountryName\": \"Denmark - Greenland\"\n    },\n    {\n        \"CountryCode\": \"DJ\",\n        \"CountryName\": \"Djibouti\"\n    },\n    {\n        \"CountryCode\": \"DM\",\n        \"CountryName\": \"Dominica\"\n    },\n    {\n        \"CountryCode\": \"DO\",\n        \"CountryName\": \"Dominican Republic\"\n    },\n    {\n        \"CountryCode\": \"EC\",\n        \"CountryName\": \"Ecuador\"\n    },\n    {\n        \"CountryCode\": \"EG\",\n        \"CountryName\": \"Egypt\"\n    },\n    {\n        \"CountryCode\": \"SV\",\n        \"CountryName\": \"El Salvador\"\n    },\n    {\n        \"CountryCode\": \"GQ\",\n        \"CountryName\": \"Equatorial Guinea\"\n    },\n    {\n        \"CountryCode\": \"ER\",\n        \"CountryName\": \"Eritrea\"\n    },\n    {\n        \"CountryCode\": \"EE\",\n        \"CountryName\": \"Estonia\"\n    },\n    {\n        \"CountryCode\": \"ET\",\n        \"CountryName\": \"Ethiopia\"\n    },\n    {\n        \"CountryCode\": \"FJ\",\n        \"CountryName\": \"Fiji\"\n    },\n    {\n        \"CountryCode\": \"FI\",\n        \"CountryName\": \"Finland\"\n    },\n    {\n        \"CountryCode\": \"AX\",\n        \"CountryName\": \"Finland - Aland Islands\"\n    },\n    {\n        \"CountryCode\": \"FR\",\n        \"CountryName\": \"France\"\n    },\n    {\n        \"CountryCode\": \"GF\",\n        \"CountryName\": \"France - French Guiana\"\n    },\n    {\n        \"CountryCode\": \"PF\",\n        \"CountryName\": \"France - French Polynesia\"\n    },\n    {\n        \"CountryCode\": \"GP\",\n        \"CountryName\": \"France - Guadeloupe\"\n    },\n    {\n        \"CountryCode\": \"MQ\",\n        \"CountryName\": \"France - Martinique\"\n    },\n    {\n        \"CountryCode\": \"YT\",\n        \"CountryName\": \"France - Mayotte\"\n    },\n    {\n        \"CountryCode\": \"NC\",\n        \"CountryName\": \"France - New Caledonia\"\n    },\n    {\n        \"CountryCode\": \"RE\",\n        \"CountryName\": \"France - Reunion\"\n    },\n    {\n        \"CountryCode\": \"BL\",\n        \"CountryName\": \"France - Saint Barthelemy\"\n    },\n    {\n        \"CountryCode\": \"MF\",\n        \"CountryName\": \"France - Saint Martin\"\n    },\n    {\n        \"CountryCode\": \"PM\",\n        \"CountryName\": \"France - St. Pierre and Miquelon\"\n    },\n    {\n        \"CountryCode\": \"WF\",\n        \"CountryName\": \"France - Wallis and Futuna Islands\"\n    },\n    {\n        \"CountryCode\": \"GA\",\n        \"CountryName\": \"Gabon\"\n    },\n    {\n        \"CountryCode\": \"GM\",\n        \"CountryName\": \"Gambia\"\n    },\n    {\n        \"CountryCode\": \"GE\",\n        \"CountryName\": \"Georgia\"\n    },\n    {\n        \"CountryCode\": \"DE\",\n        \"CountryName\": \"Germany\"\n    },\n    {\n        \"CountryCode\": \"GH\",\n        \"CountryName\": \"Ghana\"\n    },\n    {\n        \"CountryCode\": \"GR\",\n        \"CountryName\": \"Greece\"\n    },\n    {\n        \"CountryCode\": \"GD\",\n        \"CountryName\": \"Grenada\"\n    },\n    {\n        \"CountryCode\": \"GT\",\n        \"CountryName\": \"Guatemala\"\n    },\n    {\n        \"CountryCode\": \"GN\",\n        \"CountryName\": \"Guinea\"\n    },\n    {\n        \"CountryCode\": \"GW\",\n        \"CountryName\": \"Guinea-Bissau\"\n    },\n    {\n        \"CountryCode\": \"GY\",\n        \"CountryName\": \"Guyana\"\n    },\n    {\n        \"CountryCode\": \"HT\",\n        \"CountryName\": \"Haiti\"\n    },\n    {\n        \"CountryCode\": \"HN\",\n        \"CountryName\": \"Honduras\"\n    },\n    {\n        \"CountryCode\": \"HK\",\n        \"CountryName\": \"Hong Kong\"\n    },\n    {\n        \"CountryCode\": \"HU\",\n        \"CountryName\": \"Hungary\"\n    },\n    {\n        \"CountryCode\": \"IS\",\n        \"CountryName\": \"Iceland\"\n    },\n    {\n        \"CountryCode\": \"IN\",\n        \"CountryName\": \"India\"\n    },\n    {\n        \"CountryCode\": \"ID\",\n        \"CountryName\": \"Indonesia\"\n    },\n    {\n        \"CountryCode\": \"IR\",\n        \"CountryName\": \"Iran\"\n    },\n    {\n        \"CountryCode\": \"IQ\",\n        \"CountryName\": \"Iraq\"\n    },\n    {\n        \"CountryCode\": \"IE\",\n        \"CountryName\": \"Ireland\"\n    },\n    {\n        \"CountryCode\": \"IL\",\n        \"CountryName\": \"Israel\"\n    },\n    {\n        \"CountryCode\": \"IT\",\n        \"CountryName\": \"Italy\"\n    },\n    {\n        \"CountryCode\": \"JM\",\n        \"CountryName\": \"Jamaica\"\n    },\n    {\n        \"CountryCode\": \"JP\",\n        \"CountryName\": \"Japan\"\n    },\n    {\n        \"CountryCode\": \"JO\",\n        \"CountryName\": \"Jordan\"\n    },\n    {\n        \"CountryCode\": \"KZ\",\n        \"CountryName\": \"Kazakhstan\"\n    },\n    {\n        \"CountryCode\": \"KE\",\n        \"CountryName\": \"Kenya\"\n    },\n    {\n        \"CountryCode\": \"KI\",\n        \"CountryName\": \"Kiribati\"\n    },\n    {\n        \"CountryCode\": \"KP\",\n        \"CountryName\": \"Korea, North (Democratic People's Republic of Korea)\"\n    },\n    {\n        \"CountryCode\": \"KR\",\n        \"CountryName\": \"Korea, South (Republic of Korea)\"\n    },\n    {\n        \"CountryCode\": \"XZ\",\n        \"CountryName\": \"Kosovo\"\n    },\n    {\n        \"CountryCode\": \"KW\",\n        \"CountryName\": \"Kuwait\"\n    },\n    {\n        \"CountryCode\": \"KG\",\n        \"CountryName\": \"Kyrgyzstan\"\n    },\n    {\n        \"CountryCode\": \"LA\",\n        \"CountryName\": \"Laos\"\n    },\n    {\n        \"CountryCode\": \"LV\",\n        \"CountryName\": \"Latvia\"\n    },\n    {\n        \"CountryCode\": \"LB\",\n        \"CountryName\": \"Lebanon\"\n    },\n    {\n        \"CountryCode\": \"LS\",\n        \"CountryName\": \"Lesotho\"\n    },\n    {\n        \"CountryCode\": \"LR\",\n        \"CountryName\": \"Liberia\"\n    },\n    {\n        \"CountryCode\": \"LY\",\n        \"CountryName\": \"Libya\"\n    },\n    {\n        \"CountryCode\": \"LI\",\n        \"CountryName\": \"Liechtenstein\"\n    },\n    {\n        \"CountryCode\": \"LT\",\n        \"CountryName\": \"Lithuania\"\n    },\n    {\n        \"CountryCode\": \"LU\",\n        \"CountryName\": \"Luxembourg\"\n    },\n    {\n        \"CountryCode\": \"MO\",\n        \"CountryName\": \"Macao\"\n    },\n    {\n        \"CountryCode\": \"MK\",\n        \"CountryName\": \"Macedonia\"\n    },\n    {\n        \"CountryCode\": \"MG\",\n        \"CountryName\": \"Madagascar\"\n    },\n    {\n        \"CountryCode\": \"MW\",\n        \"CountryName\": \"Malawi\"\n    },\n    {\n        \"CountryCode\": \"MV\",\n        \"CountryName\": \"Maldives\"\n    },\n    {\n        \"CountryCode\": \"ML\",\n        \"CountryName\": \"Mali\"\n    },\n    {\n        \"CountryCode\": \"MT\",\n        \"CountryName\": \"Malta\"\n    },\n    {\n        \"CountryCode\": \"MH\",\n        \"CountryName\": \"Marshall Islands\"\n    },\n    {\n        \"CountryCode\": \"MR\",\n        \"CountryName\": \"Mauritania\"\n    },\n    {\n        \"CountryCode\": \"MU\",\n        \"CountryName\": \"Mauritius\"\n    },\n    {\n        \"CountryCode\": \"MX\",\n        \"CountryName\": \"Mexico\"\n    },\n    {\n        \"CountryCode\": \"FM\",\n        \"CountryName\": \"Micronesia (Caroline Islands)\"\n    },\n    {\n        \"CountryCode\": \"MD\",\n        \"CountryName\": \"Moldova\"\n    },\n    {\n        \"CountryCode\": \"MC\",\n        \"CountryName\": \"Monaco\"\n    },\n    {\n        \"CountryCode\": \"MN\",\n        \"CountryName\": \"Mongolia\"\n    },\n    {\n        \"CountryCode\": \"ME\",\n        \"CountryName\": \"Montenegro\"\n    },\n    {\n        \"CountryCode\": \"MA\",\n        \"CountryName\": \"Morocco\"\n    },\n    {\n        \"CountryCode\": \"MZ\",\n        \"CountryName\": \"Mozambique\"\n    },\n    {\n        \"CountryCode\": \"MM\",\n        \"CountryName\": \"Myanmar\"\n    },\n    {\n        \"CountryCode\": \"NA\",\n        \"CountryName\": \"Namibia\"\n    },\n    {\n        \"CountryCode\": \"NR\",\n        \"CountryName\": \"Nauru\"\n    },\n    {\n        \"CountryCode\": \"NP\",\n        \"CountryName\": \"Nepal\"\n    },\n    {\n        \"CountryCode\": \"NL\",\n        \"CountryName\": \"Netherlands\"\n    },\n    {\n        \"CountryCode\": \"BQ\",\n        \"CountryName\": \"Netherlands - Bonaire, Sint Eustaius and Saba\"\n    },\n    {\n        \"CountryCode\": \"AN\",\n        \"CountryName\": \"Netherlands Antilles\"\n    },\n    {\n        \"CountryCode\": \"NZ\",\n        \"CountryName\": \"New Zealand\"\n    },\n    {\n        \"CountryCode\": \"CK\",\n        \"CountryName\": \"New Zealand - Cook Islands\"\n    },\n    {\n        \"CountryCode\": \"NU\",\n        \"CountryName\": \"New Zealand - Niue Islands\"\n    },\n    {\n        \"CountryCode\": \"TK\",\n        \"CountryName\": \"New Zealand - Tokelau Islands\"\n    },\n    {\n        \"CountryCode\": \"NI\",\n        \"CountryName\": \"Nicaragua\"\n    },\n    {\n        \"CountryCode\": \"NE\",\n        \"CountryName\": \"Niger Republic\"\n    },\n    {\n        \"CountryCode\": \"NG\",\n        \"CountryName\": \"Nigeria\"\n    },\n    {\n        \"CountryCode\": \"NO\",\n        \"CountryName\": \"Norway\"\n    },\n    {\n        \"CountryCode\": \"OM\",\n        \"CountryName\": \"Oman\"\n    },\n    {\n        \"CountryCode\": \"PK\",\n        \"CountryName\": \"Pakistan\"\n    },\n    {\n        \"CountryCode\": \"PW\",\n        \"CountryName\": \"Palau\"\n    },\n    {\n        \"CountryCode\": \"PS\",\n        \"CountryName\": \"Palestine\"\n    },\n    {\n        \"CountryCode\": \"PA\",\n        \"CountryName\": \"Panama\"\n    },\n    {\n        \"CountryCode\": \"PG\",\n        \"CountryName\": \"Papua New Guinea\"\n    },\n    {\n        \"CountryCode\": \"PY\",\n        \"CountryName\": \"Paraguay\"\n    },\n    {\n        \"CountryCode\": \"PE\",\n        \"CountryName\": \"Peru\"\n    },\n    {\n        \"CountryCode\": \"PH\",\n        \"CountryName\": \"Philippines\"\n    },\n    {\n        \"CountryCode\": \"PL\",\n        \"CountryName\": \"Poland\"\n    },\n    {\n        \"CountryCode\": \"PT\",\n        \"CountryName\": \"Portugal\"\n    },\n    {\n        \"CountryCode\": \"QA\",\n        \"CountryName\": \"Qatar\"\n    },\n    {\n        \"CountryCode\": \"RO\",\n        \"CountryName\": \"Romania\"\n    },\n    {\n        \"CountryCode\": \"RU\",\n        \"CountryName\": \"Russian Federation\"\n    },\n    {\n        \"CountryCode\": \"RW\",\n        \"CountryName\": \"Rwanda\"\n    },\n    {\n        \"CountryCode\": \"KN\",\n        \"CountryName\": \"Saint Christopher (St Kitts) and Nevis\"\n    },\n    {\n        \"CountryCode\": \"LC\",\n        \"CountryName\": \"Saint Lucia\"\n    },\n    {\n        \"CountryCode\": \"VC\",\n        \"CountryName\": \"Saint Vincent and the Grenadines\"\n    },\n    {\n        \"CountryCode\": \"WS\",\n        \"CountryName\": \"Samoa (Western Samoa)\"\n    },\n    {\n        \"CountryCode\": \"SM\",\n        \"CountryName\": \"San Marino\"\n    },\n    {\n        \"CountryCode\": \"ST\",\n        \"CountryName\": \"Sao Tome and Principe\"\n    },\n    {\n        \"CountryCode\": \"SA\",\n        \"CountryName\": \"Saudi Arabia\"\n    },\n    {\n        \"CountryCode\": \"SN\",\n        \"CountryName\": \"Senegal\"\n    },\n    {\n        \"CountryCode\": \"RS\",\n        \"CountryName\": \"Serbia\"\n    },\n    {\n        \"CountryCode\": \"SC\",\n        \"CountryName\": \"Seychelles\"\n    },\n    {\n        \"CountryCode\": \"SL\",\n        \"CountryName\": \"Sierra Leone\"\n    },\n    {\n        \"CountryCode\": \"SG\",\n        \"CountryName\": \"Singapore\"\n    },\n    {\n        \"CountryCode\": \"SX\",\n        \"CountryName\": \"Sint Maarten\"\n    },\n    {\n        \"CountryCode\": \"SK\",\n        \"CountryName\": \"Slovakia\"\n    },\n    {\n        \"CountryCode\": \"SI\",\n        \"CountryName\": \"Slovenia\"\n    },\n    {\n        \"CountryCode\": \"SB\",\n        \"CountryName\": \"Solomon Islands\"\n    },\n    {\n        \"CountryCode\": \"SO\",\n        \"CountryName\": \"Somalia\"\n    },\n    {\n        \"CountryCode\": \"ZA\",\n        \"CountryName\": \"South Africa\"\n    },\n    {\n        \"CountryCode\": \"SS\",\n        \"CountryName\": \"South Sudan\"\n    },\n    {\n        \"CountryCode\": \"ES\",\n        \"CountryName\": \"Spain\"\n    },\n    {\n        \"CountryCode\": \"IB\",\n        \"CountryName\": \"Spain - Balearic Islands\"\n    },\n    {\n        \"CountryCode\": \"IC\",\n        \"CountryName\": \"Spain - Canary Islands\"\n    },\n    {\n        \"CountryCode\": \"EA\",\n        \"CountryName\": \"Spain - Spanish Territories of North Africa\"\n    },\n    {\n        \"CountryCode\": \"LK\",\n        \"CountryName\": \"Sri Lanka\"\n    },\n    {\n        \"CountryCode\": \"SD\",\n        \"CountryName\": \"Sudan\"\n    },\n    {\n        \"CountryCode\": \"SR\",\n        \"CountryName\": \"Suriname\"\n    },\n    {\n        \"CountryCode\": \"SZ\",\n        \"CountryName\": \"Swaziland\"\n    },\n    {\n        \"CountryCode\": \"SE\",\n        \"CountryName\": \"Sweden\"\n    },\n    {\n        \"CountryCode\": \"CH\",\n        \"CountryName\": \"Switzerland\"\n    },\n    {\n        \"CountryCode\": \"SY\",\n        \"CountryName\": \"Syrian Arab Republic\"\n    },\n    {\n        \"CountryCode\": \"TW\",\n        \"CountryName\": \"Taiwan\"\n    },\n    {\n        \"CountryCode\": \"TJ\",\n        \"CountryName\": \"Tajikistan\"\n    },\n    {\n        \"CountryCode\": \"TZ\",\n        \"CountryName\": \"Tanzania\"\n    },\n    {\n        \"CountryCode\": \"TH\",\n        \"CountryName\": \"Thailand\"\n    },\n    {\n        \"CountryCode\": \"TL\",\n        \"CountryName\": \"Timor Leste\"\n    },\n    {\n        \"CountryCode\": \"TG\",\n        \"CountryName\": \"Togo\"\n    },\n    {\n        \"CountryCode\": \"TO\",\n        \"CountryName\": \"Tonga\"\n    },\n    {\n        \"CountryCode\": \"TT\",\n        \"CountryName\": \"Trinidad and Tobago\"\n    },\n    {\n        \"CountryCode\": \"TN\",\n        \"CountryName\": \"Tunisia\"\n    },\n    {\n        \"CountryCode\": \"TR\",\n        \"CountryName\": \"Turkey\"\n    },\n    {\n        \"CountryCode\": \"TM\",\n        \"CountryName\": \"Turkmenistan\"\n    },\n    {\n        \"CountryCode\": \"TV\",\n        \"CountryName\": \"Tuvalu\"\n    },\n    {\n        \"CountryCode\": \"UG\",\n        \"CountryName\": \"Uganda\"\n    },\n    {\n        \"CountryCode\": \"UA\",\n        \"CountryName\": \"Ukraine\"\n    },\n    {\n        \"CountryCode\": \"AE\",\n        \"CountryName\": \"United Arab Emirates\"\n    },\n    {\n        \"CountryCode\": \"GB\",\n        \"CountryName\": \"United Kingdom\"\n    },\n    {\n        \"CountryCode\": \"AI\",\n        \"CountryName\": \"United Kingdom - Anguilla\"\n    },\n    {\n        \"CountryCode\": \"AC\",\n        \"CountryName\": \"United Kingdom - Ascension\"\n    },\n    {\n        \"CountryCode\": \"BM\",\n        \"CountryName\": \"United Kingdom - Bermuda\"\n    },\n    {\n        \"CountryCode\": \"VG\",\n        \"CountryName\": \"United Kingdom - British Virgin Islands\"\n    },\n    {\n        \"CountryCode\": \"KY\",\n        \"CountryName\": \"United Kingdom - Cayman Islands\"\n    },\n    {\n        \"CountryCode\": \"FK\",\n        \"CountryName\": \"United Kingdom - Falkland Islands\"\n    },\n    {\n        \"CountryCode\": \"GI\",\n        \"CountryName\": \"United Kingdom - Gibraltar\"\n    },\n    {\n        \"CountryCode\": \"GG\",\n        \"CountryName\": \"United Kingdom - Guernsey\"\n    },\n    {\n        \"CountryCode\": \"IM\",\n        \"CountryName\": \"United Kingdom - Isle of Man\"\n    },\n    {\n        \"CountryCode\": \"JE\",\n        \"CountryName\": \"United Kingdom - Jersey\"\n    },\n    {\n        \"CountryCode\": \"MS\",\n        \"CountryName\": \"United Kingdom - Montserrat\"\n    },\n    {\n        \"CountryCode\": \"PN\",\n        \"CountryName\": \"United Kingdom - Pitcairn Islands\"\n    },\n    {\n        \"CountryCode\": \"SH\",\n        \"CountryName\": \"United Kingdom - St. Helena\"\n    },\n    {\n        \"CountryCode\": \"TA\",\n        \"CountryName\": \"United Kingdom - Tristan Da Cunha\"\n    },\n    {\n        \"CountryCode\": \"TC\",\n        \"CountryName\": \"United Kingdom - Turks and Caicos Islands\"\n    },\n    {\n        \"CountryCode\": \"US\",\n        \"CountryName\": \"United States\"\n    },\n    {\n        \"CountryCode\": \"GU\",\n        \"CountryName\": \"United States - Guam\"\n    },\n    {\n        \"CountryCode\": \"MP\",\n        \"CountryName\": \"United States - Mariana Islands\"\n    },\n    {\n        \"CountryCode\": \"PR\",\n        \"CountryName\": \"United States - Puerto Rico\"\n    },\n    {\n        \"CountryCode\": \"AS\",\n        \"CountryName\": \"United States - Samoa\"\n    },\n    {\n        \"CountryCode\": \"VI\",\n        \"CountryName\": \"United States - US Virgin Islands\"\n    },\n    {\n        \"CountryCode\": \"UY\",\n        \"CountryName\": \"Uruguay\"\n    },\n    {\n        \"CountryCode\": \"UZ\",\n        \"CountryName\": \"Uzbekistan\"\n    },\n    {\n        \"CountryCode\": \"VU\",\n        \"CountryName\": \"Vanuatu\"\n    },\n    {\n        \"CountryCode\": \"VA\",\n        \"CountryName\": \"Vatican City\"\n    },\n    {\n        \"CountryCode\": \"VE\",\n        \"CountryName\": \"Venezuela\"\n    },\n    {\n        \"CountryCode\": \"VN\",\n        \"CountryName\": \"Vietnam\"\n    },\n    {\n        \"CountryCode\": \"EH\",\n        \"CountryName\": \"Western Sahara\"\n    },\n    {\n        \"CountryCode\": \"YE\",\n        \"CountryName\": \"Yemen\"\n    },\n    {\n        \"CountryCode\": \"ZM\",\n        \"CountryName\": \"Zambia\"\n    },\n    {\n        \"CountryCode\": \"ZW\",\n        \"CountryName\": \"Zimbabwe\"\n    },\n    {\n        \"CountryCode\": \"MY\",\n        \"CountryName\": \"Malaysia\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "StateByPostcode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postCode\" : \"80400\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/getStateByPostcode",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"getStateByPostcode"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postCode\" : \"80400\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www-api.pos.com.my/api/getStateByPostcode",
+							"protocol": "https",
+							"host": [
+								"www-api",
+								"pos",
+								"com",
+								"my"
+							],
+							"path": [
+								"api",
+								"getStateByPostcode"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;media-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 16 Jan 2025 17:33:03 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jan 2025 17:33:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "cdn-cache; desc=MISS"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "edge; dur=13"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "origin; dur=66"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "ak_p; desc=\"1737048783605_2038156455_83664187_7951_8674_14_0_-\";dur=1"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=93600"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Akamai-GRN",
+							"value": "0.a7cc7b79.1737048783.4fc9d3b"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"stateNm\": \"Johor\",\n        \"stateCd\": \"JOH\",\n        \"city\": \"JOHOR BAHRU\",\n        \"postCode\": \"80400\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"India\", \r\n    \"weight\": 1.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/price",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\": \"India\", \r\n    \"weight\": 1.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www-api.pos.com.my/api/price",
+							"protocol": "https",
+							"host": [
+								"www-api",
+								"pos",
+								"com",
+								"my"
+							],
+							"path": [
+								"api",
+								"price"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;media-src 'self' data: blob: pos-my-strapi-stg.s3.ap-southeast-1.amazonaws.com d38eiojdjahdit.cloudfront.net;default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=0"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 16 Jan 2025 17:33:47 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, no-cache, no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Jan 2025 17:33:47 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "355"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "cdn-cache; desc=MISS"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "edge; dur=14"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "origin; dur=271"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "ak_p; desc=\"1737048827334_2038156455_83721278_28452_8736_7_9_-\";dur=1"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=93600"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Akamai-GRN",
+							"value": "0.a7cc7b79.1737048827.4fd7c3e"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"deliveryService\": \"EMS - Merchandise\",\n        \"zone\": \"4\",\n        \"estimateDelivery\": \"3-4 working days\",\n        \"HandlingCharge\": \"32.75\",\n        \"FuelCharge\": \"32.75\",\n        \"EssCharge\": \"0\",\n        \"totalCharge\": \"65.5\",\n        \"postage\": \"196.50\",\n        \"maxWeight\": \"30\",\n        \"limitOfInsuran\": \"\",\n        \"trackNTrace\": \"YES\",\n        \"name\": \"Express Mail Service (EMS)\",\n        \"showOutletLocatorButton\": false,\n        \"isDomestic\": false,\n        \"totalAmount\": \"196.50\"\n    },\n    {\n        \"deliveryService\": \"Parcel (Air)\",\n        \"zone\": \"4\",\n        \"estimateDelivery\": \"6-14 working days\",\n        \"HandlingCharge\": \"0\",\n        \"FuelCharge\": \"0\",\n        \"EssCharge\": \"0\",\n        \"totalCharge\": \"0\",\n        \"postage\": \"153.60\",\n        \"maxWeight\": \"20\",\n        \"limitOfInsuran\": \"\",\n        \"trackNTrace\": \"YES\",\n        \"name\": \"International Air Parcel\",\n        \"showOutletLocatorButton\": false,\n        \"isDomestic\": false,\n        \"totalAmount\": \"153.60\"\n    },\n    {\n        \"deliveryService\": \"Parcel (Surface)\",\n        \"zone\": \"4\",\n        \"estimateDelivery\": \"4-9 weeks\",\n        \"HandlingCharge\": \"0\",\n        \"FuelCharge\": \"0\",\n        \"EssCharge\": \"0\",\n        \"totalCharge\": \"0\",\n        \"postage\": \"101.00\",\n        \"maxWeight\": \"\",\n        \"limitOfInsuran\": \"\",\n        \"trackNTrace\": \"YES\",\n        \"name\": \"International Surface Parcel\",\n        \"showOutletLocatorButton\": false,\n        \"isDomestic\": false,\n        \"totalAmount\": \"101.00\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
